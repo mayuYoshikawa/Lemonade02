@@ -15,13 +15,12 @@
  */
 package com.example.lemonade
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import android.widget.ImageView
 import android.widget.TextView
+import androidx.appcompat.app.AppCompatActivity
 import com.google.android.material.snackbar.Snackbar
-import org.w3c.dom.Text
 
 class MainActivity : AppCompatActivity() {
 
@@ -31,18 +30,25 @@ class MainActivity : AppCompatActivity() {
 
     // レモンを選ぶ状態
     private val SELECT = "select"
+
     // レモンを搾る状態
     private val SQUEEZE = "squeeze"
+
     // レモネードを飲む状態
     private val DRINK = "drink"
+
     // グラスが空の状態
     private val RESTART = "restart"
+
     // 選択されている状態
     private var lemonadeState = "select"
+
     // ランダムな数字を格納する為の変数
     private var lemonSize = -1
+
     // レモンを搾った回数
     private var squeezeCount = -1
+
     // レモネードを何回作ったか
     private var lemonadeCount = 0
 
@@ -187,4 +193,3 @@ class LemonTree {
         return (2..4).random()
     }
 }
-

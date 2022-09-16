@@ -49,12 +49,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
-        android:text="飲んだ回数を数える"
+        android:text="@string/count_text"
         android:textSize="18dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/image_lemon_state" />
-
 
     <Button
         android:id="@+id/CountButton"
@@ -72,12 +71,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
-        android:text="skip"
+        android:text="@string/skip"
         android:textSize="18dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/CountButton" />
 
-
 </androidx.constraintlayout.widget.ConstraintLayout>
-
