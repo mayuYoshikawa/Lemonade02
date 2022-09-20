@@ -87,7 +87,8 @@ class MainActivity : AppCompatActivity() {
         //カウントボタンがクリックされたらテキストを表示させる
         countButton.setOnClickListener {
             val countText: TextView = findViewById(R.id.countText)
-            countText.text = "${lemonadeCount}回飲んだよ"
+            var countDrink = String.format(getString(R.string.count_drink,lemonadeCount))
+            countText.text = countDrink
         }
         //skipボタンがクリックされたらDRINKの画面に遷移する
         skipButton.setOnClickListener {
